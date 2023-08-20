@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     color: "white",
     marginLeft: 10,
     marginRight: 10,
-    fontSize: 20,
+    fontSize: 15,
   },
 
   textDelete: {

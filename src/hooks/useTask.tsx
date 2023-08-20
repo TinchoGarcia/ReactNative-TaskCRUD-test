@@ -43,6 +43,7 @@ const useTask = () => {
   };
 
   const updateAdd = (state: boolean) => {
+    setTask("");
     setAddNew(state);
   };
 
