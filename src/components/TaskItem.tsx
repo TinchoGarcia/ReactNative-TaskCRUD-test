@@ -18,7 +18,9 @@ function TaskItem({ task, done, onDoneToggle, onDelete, index }: TaskItemProps) 
           { backgroundColor: done ? "green" : "gray" },
         ]}
         onPress={onDoneToggle}
-      />
+      >
+        <Text style={styles.buttonText}>{done ? "o" : "x"}</Text>
+      </TouchableOpacity>
       <Text style={styles.text}>{task}</Text>
       <TouchableOpacity style={styles.buttonDelete}>
         <Text style={styles.textDelete} onPress={onDelete}>
@@ -43,6 +45,13 @@ const styles = StyleSheet.create({
     height: 20,
     paddingLeft: 10,
     width: 90,
+  },
+
+  buttonText: {
+    color: "white",
+    fontSize: 25,
+    marginStart: 7.5,
+    marginTop: -4.5
   },
 
   container: {
